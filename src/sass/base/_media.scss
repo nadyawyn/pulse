@@ -1,0 +1,24 @@
+@media (max-width: $mobile-width) {
+	.header {
+		flex-direction: column;
+
+		&__official {
+			margin-top: 40px;
+		}
+		&__contacts {
+			align-items: center;
+			margin-top: 30px;
+
+			button {
+				margin-top: 10px;
+				width: 300px;
+				height: 40px;
+
+				font-size: 22px;
+			}
+		}
+		&__phone {
+			font-size: 24px;
+		}
+	}
+}

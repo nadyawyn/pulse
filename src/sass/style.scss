@@ -1,13 +1,28 @@
-@import 'base/variables';
+@import "base/variables";
+@import "base/mixins";
+
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
+
+a {
+    color: $main-color;
+    text-decoration: underline;
+}
+
 .container {
     max-width: 950px;
     margin: 0 auto;
+}
+.title {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 
 @import "blocks/buttons";
 @import "blocks/promo";
 @import "blocks/header";
+@import "blocks/advantages";
+
+@import "base/media";
