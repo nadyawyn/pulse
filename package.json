@@ -27,6 +27,8 @@
   },
   "browserslist": [
     "last 2 versions",
+    "> 1%",
+    "maintaned node versions",
     "not dead",
     "iOS 8"
   ]
