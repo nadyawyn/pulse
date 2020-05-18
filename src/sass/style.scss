@@ -14,15 +14,16 @@ a {
     max-width: 950px;
     margin: 0 auto;
 }
-.title {
-    text-transform: uppercase;
-    text-align: center;
-}
 
 
 @import "blocks/buttons";
+@import "blocks/titles";
+
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/advantages";
+@import "blocks/consultation";
+@import "blocks/forms";
+
 
 @import "base/media";

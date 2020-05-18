@@ -1,5 +1,5 @@
 .advantages {
-	height: 472px;
+	min-height: 472px;
 	padding: 70px 0 80px 0;
 
 	&__wrapper {
@@ -19,7 +19,7 @@
 
 		p {
 			margin-top: 20px;
-			font-size: 14px;
+			font-size: 14px; 
 		}
 	}
 	&__subtitle {
