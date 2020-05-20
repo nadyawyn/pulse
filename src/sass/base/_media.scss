@@ -99,6 +99,13 @@
 	.title_left {
 		font-size: 30px;
 	}
+
+	.carousel__content {
+		width: 530px;
+		img {
+			width: 100%;
+		}
+	}
 }
 
 @media (max-width: $mobile-width) {
@@ -197,4 +204,14 @@
 	.title_left {
 		font-size: 20px;
 	}
+	.carousel {
+		padding: 50px 0;
+		&__content {
+			width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	
 }

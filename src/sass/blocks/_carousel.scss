@@ -7,11 +7,8 @@
 		width: 750px;
 
 	}
-	.tns-controls {
-		position: relative;
-	}
 
-	[data-controls=prev], [data-controls=next], .prev, .next {
+	.slick-prev, .slick-next {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
@@ -23,15 +20,9 @@
 			height: 50px;
 		}
 	}
-	[data-controls=next], .next {
+	.slick-next {
 		left: auto;
 		right: -66px;
 	}
 
-	.tns-item {
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-	}
 }

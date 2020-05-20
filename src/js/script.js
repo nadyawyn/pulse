@@ -1,4 +1,4 @@
-/* $(document).ready(function () {
+$(document).ready(function () {
 	$('.carousel__content').slick({
 		autoplay: true,
 		infinite: true,
@@ -12,27 +12,10 @@
 			{
 				breakpoint: 992,
 				settings: {
-					dots: true,
+					dots: false,
 					arrows: false
 				}
 			}
 		]
 	});
-}); */
-
-const slider = tns({
-	container: '.carousel__content',
-	items: 1,
-	slideBy: 'page',
-	controls: false,
-	autoplayButtonOutput: false,
-	nav: false
-});
-
-document.querySelector('.prev').addEventListener('click', function () {
-	slider.goTo('prev');
-});
-
-document.querySelector('.next').addEventListener('click', function () {
-	slider.goTo('next');
-});
+}); 
