@@ -12,6 +12,23 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.catalog {
+		padding: 0px 20px 50px 20px;
+
+		&__content {
+			justify-content: center;
+
+		}
+		&-item {
+			margin-right: 20px;
+		}
+	}
+	.reviews {
+		padding: 0 20px 40px 20px;
+		&__item {
+			padding-left: 180px;
+		}
+	}
 }
 
 @media (max-width: $tablet-width) {
@@ -213,5 +230,34 @@
 			}
 		}
 	}
-	
+
+	.catalog {
+		&__tabs {
+			margin-top: 38px;
+			flex-flow: column	nowrap;
+		}
+
+		&__tab {
+			transform: none;
+			margin-bottom: 5px;
+			width: 100%;
+
+			div {
+				transform: none;
+			}
+		}
+	}
+	.reviews {
+
+		&__item {
+			padding-left: 0;
+			padding-top: 180px;
+			margin-top: 30px;
+
+			&::before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
 }
