@@ -1,0 +1,75 @@
+.footer {
+	height: 630px;
+	position: relative;
+
+	&__info {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+
+		height: 270px;
+		width: 460px;
+		background-color: $main-color;
+
+		padding: 50px 60px 60px 60px;
+	}
+
+	&__address {
+		margin-bottom: 36px;
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 500;
+		text-align: center;
+		line-height: 20px;
+	}
+	&__phone {
+		display: block;
+		color: #ffffff;
+		font-size: 20px;
+		font-weight: 700;
+		text-decoration: none;
+		text-align: center;
+		line-height: 20px;
+
+		&:hover {
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+	&__social {
+		@include reset-list;
+		width: 212px;
+		margin: 36px auto 0 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		&-item {
+			display: block;
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+
+			border: 2px solid #ffffff;
+
+			&:hover {
+				box-shadow: 0 0 50px rgba($color: #ffffff, $alpha: 1.0);
+				border:none;
+			}
+			
+		}
+
+		.facebook {
+			background: url(../../icons/facebook.svg) center (center/contain) no-repeat;
+			background-size: 50% 50%;
+		}
+		.instagram {
+			background: url(../../icons/instagram.svg) center (center/contain) no-repeat;
+			background-size: 50% 50%;
+		}
+		.pinterest {
+			background: url(../../icons/pinterest.svg) center (center/contain) no-repeat;
+			background-size: 50% 50%;
+		}
+	}
+}
