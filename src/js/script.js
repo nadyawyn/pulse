@@ -59,7 +59,33 @@ $(document).ready(function () {
 	});
 
 	//Validation 
-	$('#consultation-form').validate();
-	$('#consultation form').validate();
-	$('#order form').validate();
-}); 
+
+	function validateForms(form) {
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: "Please specify your name",
+				email: {
+					required: "We need your email address to contact you",
+					email: "Your email address must be in the format of name@domain.com"
+				}
+			}
+		});
+	};
+
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
+
+	//Mask
+
+	$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+});  
