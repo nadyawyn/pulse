@@ -137,4 +137,7 @@ $(document).ready(function () {
 		return false;
 	});
 
+	//Animation 
+	new WOW().init();
+
 });  
