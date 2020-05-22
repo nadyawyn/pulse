@@ -76,7 +76,21 @@ $(document).ready(function () {
 					required: "We need your email address to contact you",
 					email: "Your email address must be in the format of name@domain.com"
 				}
-			}
+			}/*,
+			submitHandler: function (e) {
+				e.preventDefault();
+				$.ajax({
+					type: "POST",
+					url: "mailer/smart.php",
+					data: $(this).serialize()
+				}).done(function () {
+					$(this).find("input").val("");
+					$('#consultation, #order').fadeOut();
+					$('.overlay, #thanks').fadeIn('slow');
+					$('form').trigger('reset');
+				});
+				return false;
+			}*/
 		});
 	};
 
@@ -103,6 +117,23 @@ $(document).ready(function () {
 
 			$('form').trigger('reset');
 		});
+		return false;
+	});
+
+	//Smooth scroll and pageup
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1600) {
+			$('.pageup').fadeIn('slow');
+		}
+		else {
+			$('.pageup').fadeOut('slow');
+		}
+	});
+
+	$("a[href^='#']").click(function () {
+		const _href = $(this).attr("href");
+		$("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
 		return false;
 	});
 

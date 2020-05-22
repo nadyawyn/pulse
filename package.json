@@ -29,5 +29,8 @@
     "last 2 versions",
     "not dead",
     "iOS 8"
-  ]
+  ],
+  "dependencies": {
+    "animate.css": "^4.1.0"
+  }
 }
