@@ -173,7 +173,11 @@
 		}
 
 		&__list {
-			@include reset-list;
+
+			ul {
+				@include reset-list;
+
+			}
 			position: relative;
 			width: 50%;
 			margin-left: 20px;
