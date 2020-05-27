@@ -1,5 +1,5 @@
 {
-  "name": "uber",
+  "name": "pulse",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nadyawyn/bsp.git"
+    "url": "git+https://github.com/nadyawyn/pulse.git"
   },
   "author": "nadya",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nadyawyn/bsp/issues"
+    "url": "https://github.com/nadyawyn/pulse/issues"
   },
-  "homepage": "https://github.com/nadyawyn/bsp#readme",
+  "homepage": "https://github.com/nadyawyn/pulse#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
